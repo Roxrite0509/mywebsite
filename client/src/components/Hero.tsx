@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import heroImage from "@assets/generated_images/Hero_workspace_background_4d5448a7.png";
+import heroImage from "@assets/generated_images/Futuristic_3D_hero_background_ed5699a6.png";
 
 export default function Hero() {
   const scrollToProjects = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "auto" });
   };
 
   const downloadCV = () => {
@@ -14,20 +14,21 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 animate-pulse"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          animation: "pulse 4s ease-in-out infinite",
         }}
       />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
           Your Name Here
         </h1>
         
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-200 mb-6 font-medium" data-testid="text-tagline">
+        <p className="text-xl sm:text-2xl md:text-3xl text-red-400 mb-6 font-medium" data-testid="text-tagline">
           Full Stack Developer & Creative Technologist
         </p>
         

@@ -17,9 +17,11 @@ export default function Navigation() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.classList.toggle("dark", savedTheme === "dark");
+    const initialTheme = savedTheme || "dark";
+    setTheme(initialTheme);
+    document.documentElement.classList.toggle("dark", initialTheme === "dark");
+    if (!savedTheme) {
+      localStorage.setItem("theme", "dark");
     }
   }, []);
 
@@ -31,7 +33,7 @@ export default function Navigation() {
   };
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "auto" });
     setIsMobileMenuOpen(false);
   };
 

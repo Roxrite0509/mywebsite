@@ -16,7 +16,7 @@ export default function Footer() {
   ];
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "auto" });
   };
 
   return (

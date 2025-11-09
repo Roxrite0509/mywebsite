@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
@@ -35,9 +35,10 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: Mail, label: "Email", href: "mailto:your.email@example.com" },
-    { icon: Github, label: "GitHub", href: "https://github.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/yourusername" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
+    { icon: Twitter, label: "Twitter", href: "https://twitter.com/yourusername" },
+    { icon: Instagram, label: "Instagram", href: "https://instagram.com/yourusername" },
   ];
 
   return (

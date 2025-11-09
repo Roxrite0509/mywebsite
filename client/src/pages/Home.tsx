@@ -5,11 +5,13 @@ import Skills from "@/components/Skills";
 import CodeSnippets from "@/components/CodeSnippets";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <SocialLinks />
       <Hero />
       <Projects />
       <Skills />

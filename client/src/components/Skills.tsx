@@ -3,24 +3,24 @@ import { Code2, Database, Palette, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
-    name: "Frontend",
+    name: "AI/ML",
     icon: Code2,
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"],
+    skills: ["Python", "XGBoost", "Scikit-learn", "YOLO", "LLM Integration", "Computer Vision"],
   },
   {
-    name: "Backend",
+    name: "Full Stack",
     icon: Database,
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
+    skills: ["React", "Node.js", "JavaScript", "HTML/CSS", "Firebase", "IoT Hub"],
   },
   {
-    name: "Design",
-    icon: Palette,
-    skills: ["Figma", "UI/UX", "Responsive Design", "Prototyping", "Branding"],
-  },
-  {
-    name: "Tools",
+    name: "IoT & Robotics",
     icon: Wrench,
-    skills: ["Git", "Docker", "AWS", "CI/CD", "Testing"],
+    skills: ["Raspberry Pi", "Arduino", "Sensor Integration", "Control Systems", "Solar Power"],
+  },
+  {
+    name: "Research & Data",
+    icon: Palette,
+    skills: ["Data Analytics", "Pandas", "Research Methodology", "Safety Standards", "Chemistry"],
   },
 ];
 

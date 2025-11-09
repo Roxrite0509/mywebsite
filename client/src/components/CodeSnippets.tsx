@@ -8,60 +8,69 @@ import { useToast } from "@/hooks/use-toast";
 const codeExamples = [
   {
     id: "1",
-    title: "React Custom Hook",
-    description: "A custom hook for managing form state with validation",
-    language: "TypeScript",
-    code: `const useForm = <T,>(initialValues: T) => {
-  const [values, setValues] = useState(initialValues);
-  const [errors, setErrors] = useState({});
-
-  const handleChange = (name: keyof T, value: any) => {
-    setValues(prev => ({ ...prev, [name]: value }));
-  };
-
-  return { values, errors, handleChange };
-};`,
+    title: "QHI Metric Calculation",
+    description: "Quantifiable Hallucination Index for Medical AI Models",
+    language: "Python",
+    code: `def calculate_qhi(confidence, risk_score, causal_violation):
+    """
+    QHI = Confidence × Risk × Causal Violation Score
+    Quantifies AI hallucination severity for clinical deployment
+    """
+    qhi = confidence * risk_score * causal_violation
+    
+    # Standardized safety thresholds
+    if qhi < 0.3:
+        return {"qhi": qhi, "status": "safe"}
+    elif qhi < 0.7:
+        return {"qhi": qhi, "status": "review_required"}
+    else:
+        return {"qhi": qhi, "status": "unsafe"}`,
   },
   {
     id: "2",
-    title: "API Route Handler",
-    description: "Express middleware for authentication and error handling",
+    title: "Smart Triage Routing",
+    description: "MedRide's intelligent hospital routing algorithm",
     language: "JavaScript",
-    code: `app.post('/api/auth', async (req, res) => {
-  try {
-    const { email, password } = req.body;
-    const user = await User.findByEmail(email);
-    
-    if (!user) {
-      return res.status(401).json({ error: 'Invalid credentials' });
-    }
-    
-    const token = jwt.sign({ id: user.id }, SECRET);
-    res.json({ token, user });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});`,
+    code: `async function smartTriageRoute(patientData, location) {
+  // Get nearby hospitals with real-time bed availability
+  const hospitals = await getAvailableHospitals(location);
+  
+  // LLM-based severity assessment
+  const severity = await assessSeverity(patientData);
+  
+  // Match patient to optimal hospital
+  const bestMatch = hospitals
+    .filter(h => h.capabilities.includes(severity.required))
+    .sort((a, b) => 
+      calculateScore(a, severity) - calculateScore(b, severity)
+    )[0];
+  
+  return { hospital: bestMatch, eta: calculateETA(location, bestMatch) };
+}`,
   },
   {
     id: "3",
-    title: "Tailwind Animation",
-    description: "Custom animation configuration for smooth transitions",
-    language: "CSS",
-    code: `@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    title: "XGBoost Model Training",
+    description: "91% accuracy DDT susceptibility prediction for DRDO",
+    language: "Python",
+    code: `import xgboost as xgb
+from sklearn.model_selection import train_test_split
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out;
-}`,
+# Train XGBoost for propellant DDT prediction
+X_train, X_test, y_train, y_test = train_test_split(
+    features, labels, test_size=0.2, random_state=42
+)
+
+model = xgb.XGBClassifier(
+    max_depth=6,
+    learning_rate=0.1,
+    n_estimators=100,
+    objective='binary:logistic'
+)
+
+model.fit(X_train, y_train)
+accuracy = model.score(X_test, y_test)  # 91% achieved
+print(f"Model Accuracy: {accuracy:.2%}")`,
   },
 ];
 

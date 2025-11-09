@@ -6,32 +6,32 @@ export default function SocialLinks() {
     { 
       icon: Mail, 
       label: "Email", 
-      href: "mailto:your.email@example.com",
-      editable: "your.email@example.com"
+      href: "mailto:pranavpandey.pr@gmail.com",
+      editable: "pranavpandey.pr@gmail.com"
     },
     { 
       icon: Github, 
       label: "GitHub", 
-      href: "https://github.com/yourusername",
-      editable: "yourusername"
+      href: "https://github.com/pranavpandey",
+      editable: "pranavpandey"
     },
     { 
       icon: Linkedin, 
       label: "LinkedIn", 
-      href: "https://linkedin.com/in/yourusername",
-      editable: "yourusername"
+      href: "https://linkedin.com/in/pranavpandey",
+      editable: "pranavpandey"
     },
     { 
       icon: Twitter, 
       label: "Twitter", 
-      href: "https://twitter.com/yourusername",
-      editable: "@yourusername"
+      href: "https://twitter.com/pranavpandey",
+      editable: "@pranavpandey"
     },
     { 
       icon: Instagram, 
       label: "Instagram", 
-      href: "https://instagram.com/yourusername",
-      editable: "@yourusername"
+      href: "https://instagram.com/pranavpandey",
+      editable: "@pranavpandey"
     },
   ];
 

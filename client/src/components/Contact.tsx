@@ -34,11 +34,11 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: Mail, label: "Email", href: "mailto:your.email@example.com" },
-    { icon: Github, label: "GitHub", href: "https://github.com/yourusername" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com/yourusername" },
-    { icon: Instagram, label: "Instagram", href: "https://instagram.com/yourusername" },
+    { icon: Mail, label: "Email", href: "mailto:pranavpandey.pr@gmail.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/pranavpandey" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/pranavpandey" },
+    { icon: Twitter, label: "Twitter", href: "https://twitter.com/pranavpandey" },
+    { icon: Instagram, label: "Instagram", href: "https://instagram.com/pranavpandey" },
   ];
 
   return (

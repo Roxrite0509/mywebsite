@@ -25,16 +25,17 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
-          Your Name Here
+          Pranav Pandey
         </h1>
         
         <p className="text-xl sm:text-2xl md:text-3xl text-red-400 mb-6 font-medium" data-testid="text-tagline">
-          Full Stack Developer & Creative Technologist
+          AI/ML Engineer • Healthcare Innovator • Full Stack Developer
         </p>
         
         <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto mb-12" data-testid="text-bio">
-          Crafting beautiful digital experiences with modern web technologies. 
-          Passionate about creating intuitive interfaces and scalable solutions.
+          M.Sc. Chemistry & B.E. Chemical Engineering @ BITS Pilani Goa. 
+          Building AI-powered healthcare solutions, IoT systems, and intelligent robotics. 
+          Founder of MedRide - revolutionizing emergency medical transport.
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center items-center">
